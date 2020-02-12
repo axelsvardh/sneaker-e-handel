@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300&display=swap%27');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+
+}
+
+header {
+	text-align: center;
+	padding-top: 10px;
+}
+
+nav {
+
+}
+
+section {
+	
+}
+
+footer {
+
+}
+
+.hero-pic {
+	z-index: -1;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	margin: 5px;
+}
+
+input[type=checkbox] {
+	position: fixed;
+	opacity:0;
+}
+
+.menu {
+	background-color: #fff;
+	width: 250px;
+	position: fixed;
+	margin-right: -250px;
+	right: 0px;
+	height: 100%;
+	padding: 30px 50px;
+	font-size: 30px;
+	transition: margin 0.5s;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.nav-toggle {
+	display: block;
+	position: fixed;
+	top: 15px;
+	right: 10px;
+	height: 20px;
+	width: 30px;
+	cursor: pointer;
+	z-index: 99;
+	transition: all 0.2s;
+}
+
+.nav-toggle span {
+	position: relative;
+	display: block;
+	height: 2px;
+	width: 30px;
+	background-color: #000;
+	transition: all 0.2s;
+	top: 4px;
+}
+
+.nav-toggle span:nth-child(2) {
+	top:10px;
+}
+
+input[type=checkbox]:checked ~ .nav-toggle {
+}
+
+input[type=checkbox]:checked ~ .nav-toggle span:nth-child(1) {
+	top: 12px;
+	transform: rotate(-45deg);
+}
+
+input[type=checkbox]:checked ~ .nav-toggle span:nth-child(2) {
+	transform: rotate(45deg);
+}
+
+input[type=checkbox]:checked ~ .menu {
+	margin-right: 0px;
+}
+
+input[type=checkbox]:checked ~ section {
+	background-color: rgba(0, 0, 0, 0.4);
+	opacity: .4;
+	transition: opacity .3s ease;
+}
+
+.menu a:active { color: #000; }
+.menu a:visited { color: #000; }
+.menu a:hover { color: #000; border-bottom: 2px solid #000;}
+.menu a:link { color: #000; text-decoration: none;}
+
+
+
+
+
