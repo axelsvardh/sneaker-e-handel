@@ -6,7 +6,8 @@ background-color: lightgrey;
 text-align: center;
 }
 
-
+img {box-sizing: auto;
+}
     
 section {
     border: 1px solid darkgrey;
