@@ -6,8 +6,7 @@ background-color: lightgrey;
 text-align: center;
 }
 
-img {box-sizing: auto;
-}
+
     
 section {
     border: 1px solid darkgrey;
@@ -74,7 +73,7 @@ section {
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: 
 "header header header header header header header header header header header header" 
-"box1 box1 box2 box2 box2 box2 box2 box2 box2 box2 box3 box3" 
+"box1 box1 box1 box2 box2 box2 box2 box2 box2 box2 box3 box3" 
 "content content content content content content content content content sidebar sidebar sidebar" 
 "footer footer footer footer footer footer footer footer footer footer footer footer";
 
@@ -103,45 +102,6 @@ section {
 
  }
 
-/* Mindre desktopskärmar */ @media only screen and (min-width: 960px) and (max-width: 1199px) {
-
-.container{
-    display: grid;
-    height: 100%;
-    margin: 20px;
-    grid-gap: 2%;
-    grid-template-columns: repeat(12, 1fr); 
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: 
-"header header header header header header header header header header header header" 
-"box1 box1 box1 box2 box2 box2 box2 box2 box2 box3 box3 box3" 
-"content content content content content content content content sidebar sidebar sidebar sidebar" 
-"footer footer footer footer footer footer footer footer footer footer footer footer";
-}
-
-.header { grid-area: header; } 
-.box1 { grid-area: box1; }
-.box2 { grid-area: box2; }
-.box3 { grid-area: box3; }
-.content { grid-area: content; }
-.sidebar { grid-area: sidebar; }
-
-
-
-.section7 {
-    
-    grid-area: footer;
-    display: grid;
-    width: 100%;
-    padding: 2px;
-    height: 100%;
-    grid-template-columns: repeat(4,1fr );
-    grid-template-rows: 200px;
-    grid-row-gap: 10%; 
-    grid-column-gap: 2.5%;
-    grid-template-areas: "footer1 footer2 footer3 footer4";
-
-}
 
 }
 
@@ -201,9 +161,9 @@ section {
     "header header header header"
     "box1 box1 box1 box1"
     "box2 box2 box2 box2"
-    "box3 box3 box3 box3"
-    "content content content content"
-    "sidebar sidebar sidebar sidebar"
+    "box2 box2 box2 box2"
+    "content content sidebar sidebar"
+    "content content sidebar sidebar"
     "footer footer footer footer";  
 }
 
