@@ -6,17 +6,27 @@
 	font-family: 'Quicksand', sans-serif;
 }
 
+.body {
+	background-color: #fff;
+}
+
 .header-mobile {
 	text-align: center;
 	padding: 8px;
 	position: fixed;
 	background-color: #fff;
 	width: 100%;
+	top: 0;
 }
 
 .logo img {
 	height: auto; 
 	width: 80px;
+}
+
+.shopping-bag-pic {
+	position: fixed;
+	top: 6px;
 }
 
 .hero-pic {
@@ -119,7 +129,10 @@ h3 {
 	overflow-y: hidden;
 	overflow-x: scroll;
 	padding-left: 10px;
-	box-sizing: border-box;
+}
+
+.slide-items a {
+	margin-right: 8px;
 }
 
 ::-webkit-scrollbar {
