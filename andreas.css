@@ -221,12 +221,12 @@ section {
 
 
 
-.price {
+.arprice {
   color: grey;
   font-size: 22px;
 }
 
-.buy button {
+.arbuy button {
   border: 6px black;
   outline: 0;
   padding: 12px;
@@ -238,7 +238,7 @@ section {
   font-size: 18px;
 }
 
-.buy button:hover {
+.arbuy button:hover {
   opacity: 0.7;
   cursor: pointer;
 }
