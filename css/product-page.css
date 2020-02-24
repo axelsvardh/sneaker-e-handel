@@ -187,7 +187,7 @@ body {
         width: 100%;
         margin: 0 auto;
     }
-    .logo {
+    .header-mobile {
         display: none;
     }
     .nav-logo img {
@@ -293,7 +293,7 @@ body {
         margin: 0 auto;
     }
 
-    .logo {
+    .header-mobile {
         display: none;
     }
 
