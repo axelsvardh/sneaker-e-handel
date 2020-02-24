@@ -3,12 +3,12 @@
 body {
 color: grey;
 background-color: lightgrey;
-text-align: center;
-}
+text-align: center;}
 
 
 section {
     border: 2px solid darkgrey;
+   
 
 }
 
@@ -63,6 +63,7 @@ section {
 
 
 .container{
+    text-align: center;
     display: grid;
     height: 100%;
     margin: 20px;
