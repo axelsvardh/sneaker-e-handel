@@ -65,6 +65,7 @@ body {
 }
 
 .products h5 {
+    background-color: #FFF;
 	font-weight: 500;
 	line-height: 1.7em;
 }
