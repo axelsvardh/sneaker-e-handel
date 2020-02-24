@@ -22,14 +22,11 @@ body {
     display: flex;
     width: 90%;
     margin: 5% 5% 0 5%;
-    padding: 30px 0;
+    padding: 35px 0;
 }
 
 .product-filter h1 {
-    flex-grow: 1;
-    font-size: 28px;
-	font-weight: 300;
-	flex: 1;
+    display: none;
 }
 
 .sort {
@@ -187,9 +184,22 @@ body {
         width: 100%;
         margin: 0 auto;
     }
+
     .header-mobile {
         display: none;
     }
+
+    .product-filter {
+        padding: 30px 0;
+    }
+
+    .product-filter h1 {
+        display: block;
+        font-size: 30px;
+        font-weight: 300;
+        flex: 1;
+    }
+
     .nav-logo img {
         position: fixed;
         top: 10px;
@@ -295,6 +305,17 @@ body {
 
     .header-mobile {
         display: none;
+    }
+
+    .product-filter {
+        padding: 30px 0;
+    }
+
+    .product-filter h1 {
+        display: block;
+        font-size: 30px;
+        font-weight: 300;
+        flex: 1;
     }
 
     .nav-logo img {
