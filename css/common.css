@@ -45,9 +45,9 @@ input[type=checkbox] {
 
 .menu-off-canvas {
 	background-color: #fff;
-	width: 250px;
+	width: 150px;
 	position: fixed;
-	margin-right: -250px;
+	margin-right: -350px;
 	right: 0px;
 	height: 100%;
 	padding: 30px 50px;
@@ -85,9 +85,6 @@ input[type=checkbox] {
 	top:10px;
 }
 
-input[type=checkbox]:checked ~ .nav-toggle {
-}
-
 input[type=checkbox]:checked ~ .nav-toggle span:nth-child(1) {
 	top: 12px;
 	transform: rotate(-45deg);
@@ -122,6 +119,7 @@ h3 {
 	overflow-y: hidden;
 	overflow-x: scroll;
 	padding-left: 10px;
+	box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -132,8 +130,8 @@ h3 {
 .product-background-slider {
 	background-color: #EEE;
 	padding: 20% 3% 15% 3%;
-	margin-right: 6px;
-	width: 160px;
+	margin-right: 8px;
+	width: 150px;
 }
 
 .product-background-slider h6, h5 {
@@ -205,7 +203,7 @@ h3 {
 
 	.menu-off-canvas {
 		width: 400px;
-		margin-right: -400px;
+		margin-right: -500px;
 		font-size: 40px;
 	}
 
