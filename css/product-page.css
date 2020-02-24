@@ -17,6 +17,12 @@ body {
     display: none;
 }
 
+.shopping-bag-pic {
+    position: fixed;
+    top: 6px;
+    opacity: 0.8;
+}
+
 /* Filter Header */
 .product-filter {
     display: flex;
