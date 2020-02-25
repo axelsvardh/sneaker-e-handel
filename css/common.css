@@ -70,7 +70,7 @@ input[type=checkbox] {
 	justify-content: space-between;
 }
 
-.nav-toggle {
+.nav-toggle-menu {
 	display: block;
 	position: fixed;
 	top: 16px;
@@ -82,7 +82,7 @@ input[type=checkbox] {
 	transition: all 0.2s;
 }
 
-.nav-toggle span {
+.nav-toggle-menu span {
 	position: relative;
 	display: block;
 	height: 2px;
@@ -92,33 +92,71 @@ input[type=checkbox] {
 	top: 4px;
 }
 
-.nav-toggle span:nth-child(2) {
+.nav-toggle-menu span:nth-child(2) {
 	top:10px;
 }
 
-input[type=checkbox]:checked ~ .nav-toggle span:nth-child(1) {
+#nav-toggle-menu:checked ~ .nav-toggle-menu span:nth-child(1) {
 	top: 12px;
 	transform: rotate(-45deg);
 }
 
-input[type=checkbox]:checked ~ .nav-toggle span:nth-child(2) {
+#nav-toggle-menu:checked ~ .nav-toggle-menu span:nth-child(2) {
 	transform: rotate(45deg);
 }
 
-input[type=checkbox]:checked ~ .menu-off-canvas {
+#nav-toggle-menu:checked ~ .menu-off-canvas {
 	margin-right: 0px;
-}
-
-input[type=checkbox]:checked ~ section {
-	background-color: rgba(0, 0, 0, 0.4);
-	opacity: .4;
-	transition: opacity .3s ease;
 }
 
 .menu-off-canvas a:active { color: #000; }
 .menu-off-canvas a:visited { color: #000; }
 .menu-off-canvas a:hover { color: #000; border-bottom: 1px solid #000;}
 .menu-off-canvas a:link { color: #000; text-decoration: none;}
+	
+	/*Shopping bag code*/
+
+.shopping-bag-off-canvas {
+	width: 100px;
+	position: fixed;
+	margin-left: -350px;
+	left: 0px;
+	height: 100%;
+	padding: 30px 50px;
+	font-size: 30px;
+	transition: margin 1s;
+}
+
+.nav-toggle-shopping-bag {
+	display: block;
+	position: fixed;
+	top: 5px;
+	height: 32px;
+	width: 40px;
+	cursor: pointer;
+	z-index: 99;
+	transition: margin 1s;
+}
+
+.nav-toggle-shopping-bag img {
+	display: block;
+	height: 40px;
+	width: 40px;
+	transition: all 1s;
+	z-index: 1;
+}
+
+#nav-toggle-shopping-bag:checked ~ .nav-toggle-shopping-bag {
+	margin-left: 100px;
+}
+
+#nav-toggle-shopping-bag:checked ~ .nav-toggle-shopping-bag img {
+	margin-left: 0px;
+}
+
+#nav-toggle-shopping-bag:checked ~ .shopping-bag-off-canvas {
+	margin-left:0;
+}
 
 h2 {
 	padding-left: 10px;
@@ -137,9 +175,9 @@ h2 {
 }
 
 ::-webkit-scrollbar {
-		width: 0px;
-		background: transparent;
-	}
+	width: 0px;
+	background: transparent;
+}
 
 .product-background-slider {
 	background-color: #EEE;
@@ -267,7 +305,6 @@ h2 {
     height: auto;
     margin: 5px;
 }
-
 	/*Tablet Version*/
 
 @media only screen and (min-width: 768px) {
@@ -417,6 +454,48 @@ h2 {
 		margin-top: -100px;
 	}
 
+	.shopping-bag-off-canvas {
+		width: 100px;
+		position: fixed;
+		margin-left: -350px;
+		right: 0px;
+		height: 100%;
+		padding: 30px 50px;
+		font-size: 30px;
+		transition: margin 1s;
+	}
+
+	.nav-toggle-shopping-bag {
+		display: block;
+		position: fixed;
+		top: 5px;
+		height: 32px;
+		width: 40px;
+		cursor: pointer;
+		z-index: 99;
+		transition: margin 1s;
+	}
+
+	.nav-toggle-shopping-bag img {
+		display: block;
+		height: 40px;
+		width: 40px;
+		transition: all 1s;
+		z-index: 1;
+	}
+
+	#nav-toggle-shopping-bag:checked ~ .nav-toggle-shopping-bag {
+		margin-right: 100px;
+	}
+
+	#nav-toggle-shopping-bag:checked ~ .nav-toggle-shopping-bag img {
+		margin-right: 0px;
+	}
+
+	#nav-toggle-shopping-bag:checked ~ .shopping-bag-off-canvas {
+		margin-right: 0;
+	}
+	
 	.slide-items a {
 		margin-right: 10px;
 	}
