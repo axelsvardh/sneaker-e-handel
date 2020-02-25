@@ -24,15 +24,12 @@
 	width: 80px;
 }
 
-<<<<<<< HEAD
-=======
 .shopping-bag-pic {
 	position: fixed;
 	top: 6px;
 	opacity: 0.8;
 }
 
->>>>>>> 51f5fbf53b332111309cb2dcdd89296af7630ba7
 .hero-pic {
 	z-index: -1;
 	margin-bottom: 15px;
@@ -237,8 +234,6 @@ h2 {
 .blog-post2 a { border-bottom: 1px solid #555; color: #555; }
 .blog-post2 a:hover { color: #000; }
 
-<<<<<<< HEAD
-=======
 .footer {
     grid-area: foot;
 }
@@ -310,8 +305,6 @@ h2 {
     height: auto;
     margin: 5px;
 }
-
->>>>>>> 51f5fbf53b332111309cb2dcdd89296af7630ba7
 	/*Tablet Version*/
 
 @media only screen and (min-width: 768px) {
@@ -461,7 +454,6 @@ h2 {
 		margin-top: -100px;
 	}
 
-<<<<<<< HEAD
 	.shopping-bag-off-canvas {
 		width: 100px;
 		position: fixed;
@@ -501,11 +493,11 @@ h2 {
 	}
 
 	#nav-toggle-shopping-bag:checked ~ .shopping-bag-off-canvas {
-		margin-right:0;
-=======
+		margin-right: 0;
+	}
+	
 	.slide-items a {
 		margin-right: 10px;
->>>>>>> 51f5fbf53b332111309cb2dcdd89296af7630ba7
 	}
 
 	.product-background-slider {
