@@ -164,6 +164,11 @@ div.tabletbild {
 
 /* Mobiltelefoner/iPhone */ @media only screen and (max-width: 767px) {
 
+div.mobilebild {
+    width: 50%;
+    height: auto;
+}
+
 div.tabletbild {
     display: none;
 }
