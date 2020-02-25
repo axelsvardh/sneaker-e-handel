@@ -8,12 +8,13 @@ color: grey;
 background-color: lightgrey;
 text-align: center;
 
-
 }
 
 
 section {
     border: 2px solid darkgrey;
+
+}
 
 
 .arprice {
@@ -36,6 +37,7 @@ section {
   height: 50px;
   margin: 5px;
   font-size: 18px;
+
 }
 
 .button:hover {
@@ -55,7 +57,7 @@ img {
 
 /* Sections */ 
 
-}
+
 
 .section1 {
     grid-area: header;
@@ -129,12 +131,13 @@ font-size: 2vw;
 
 /* Bild endast för tablet*/ 
 
-div.tabletbild {
+div.tabletbild 
+{
     display: none;
 }
 
 
-/* Container Desktop */ 
+/* Container som används specifikt för Desktops*/
 
 .container{
     text-align: center;
@@ -185,20 +188,22 @@ div.tabletbild {
 /* Funktioner endast för tablet-utseendet */ 
 
 
-div.tabletproducttext {
+div.tabletproducttext 
+{
 
 display: justify;
 
 padding: 10px;
 }
 
-div.tabletbild {
+div.tabletbild 
+{
   display: block;
   margin-top: 65px;
 }
 
 
-/* Container för tablet */ 
+/* Container som används specifikt för tablets */
 
 .container {
     display: grid;
@@ -239,17 +244,17 @@ div.tabletbild {
 }
 
 
-    
-
 /* Mobiltelefoner/iPhone */ @media only screen and (max-width: 767px) {
 
 /* Funktioner som ej används för Mobiltelefoner/iPhone */
 
-div.tabletbild {
+div.tabletbild 
+{
     display: none;
 }
 
-  div.desktoptext {
+  div.desktoptext 
+  {
     display: none;
   }
 
@@ -257,7 +262,8 @@ div.tabletbild {
 /* Funktioner som används specifikt för Mobiltelefoner/iPhone */
 
 
-div.producttextmobile {
+div.producttextmobile 
+{
 
   font-size: 5vw;
   padding: 15px;
@@ -265,7 +271,8 @@ div.producttextmobile {
  }
 
 
-div.mobilebild {
+div.mobilebild 
+{
 display: block;
   margin-left: auto;
   margin-right: auto;
