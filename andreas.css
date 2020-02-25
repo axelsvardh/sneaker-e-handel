@@ -71,8 +71,19 @@ div.producttextdesktop
     text-align: left;
     padding: 10px;
 
+}
+
+div.abouttextdesktop
+
+{
+
+text-align: justify;
+padding:20px;
+font-size: 2vw;
 
 }
+
+
 
 div.tabletbild {
     display: none;
