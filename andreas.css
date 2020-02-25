@@ -1,4 +1,7 @@
 
+/* CSS för både mobile/tablet/desktop */
+
+
 
 body {
 color: grey;
@@ -12,7 +15,45 @@ text-align: center;
 section {
     border: 2px solid darkgrey;
 
-   
+
+.arprice {
+  color: black;
+  font-size: 2vw;
+  font-weight: bolder;
+  background-color: white;
+  border: 2px solid grey;
+}
+
+.button {
+  border: 2px solid darkgrey;
+  border-radius: 90px;
+  outline: 0;
+  padding: 12px;
+  color: black;
+  background-color: lightgrey;
+  text-align: center;
+  width: 100px;
+  height: 50px;
+  margin: 5px;
+  font-size: 18px;
+}
+
+.button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  background-color:lightblue;
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+/* Sections */ 
 
 }
 
@@ -65,6 +106,9 @@ section {
 
 /* Breda desktopskärmar */ @media only screen and (min-width: 1200px) {
 
+
+/* Text specifikt för Desktop */ 
+
 div.producttextdesktop
 
 {
@@ -83,11 +127,14 @@ font-size: 2vw;
 
 }
 
-
+/* Bild endast för tablet*/ 
 
 div.tabletbild {
     display: none;
 }
+
+
+/* Container Desktop */ 
 
 .container{
     text-align: center;
@@ -134,6 +181,10 @@ div.tabletbild {
 
 /* Tablets/iPad */ @media only screen and (min-width: 768px) and (max-width: 1199px) {
 
+
+/* Funktioner endast för tablet-utseendet */ 
+
+
 div.tabletproducttext {
 
 display: justify;
@@ -146,6 +197,8 @@ div.tabletbild {
   margin-top: 65px;
 }
 
+
+/* Container för tablet */ 
 
 .container {
     display: grid;
@@ -190,6 +243,20 @@ div.tabletbild {
 
 /* Mobiltelefoner/iPhone */ @media only screen and (max-width: 767px) {
 
+/* Funktioner som ej används för Mobiltelefoner/iPhone */
+
+div.tabletbild {
+    display: none;
+}
+
+  div.desktoptext {
+    display: none;
+  }
+
+
+/* Funktioner som används specifikt för Mobiltelefoner/iPhone */
+
+
 div.producttextmobile {
 
   font-size: 5vw;
@@ -206,13 +273,7 @@ display: block;
 
 }
 
-div.tabletbild {
-    display: none;
-}
-
-  div.desktoptext {
-    display: none;
-  }
+/* Container som används specifikt för Mobiltelefoner/iPhone */
 
 .container {
     display: grid;
@@ -244,41 +305,6 @@ div.tabletbild {
 
 }
 
-
-
-.arprice {
-  color: black;
-  font-size: 2vw;
-  font-weight: bolder;
-  background-color: white;
-  border: 2px solid grey;
-}
-
-.button {
-  border: 2px solid darkgrey;
-  border-radius: 90px;
-  outline: 0;
-  padding: 12px;
-  color: black;
-  background-color: lightgrey;
-  text-align: center;
-  width: 100px;
-  height: 50px;
-  margin: 5px;
-  font-size: 18px;
-}
-
-.button:hover {
-  opacity: 0.7;
-  cursor: pointer;
-  background-color:lightblue;
-}
-
-
-img {
-  width: 100%;
-  height: auto;
-}
 
 
 
