@@ -270,6 +270,16 @@ div.producttextmobile
  }
 
 
+div.articleproducttextmobile
+
+{
+
+ font-size: 4vw;
+  padding: 15px;
+  margin-top: 100px;
+ 
+}
+
 div.mobilebild 
 {
 display: block;
