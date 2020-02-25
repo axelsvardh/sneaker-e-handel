@@ -3,7 +3,10 @@
 body {
 color: grey;
 background-color: lightgrey;
-text-align: center;}
+text-align: center;
+
+
+}
 
 
 section {
@@ -62,7 +65,14 @@ section {
 
 /* Breda desktopskärmar */ @media only screen and (min-width: 1200px) {
 
+div.producttextdesktop
 
+{
+    text-align: left;
+    padding: 10px;
+
+
+}
 
 div.tabletbild {
     display: none;
@@ -113,7 +123,12 @@ div.tabletbild {
 
 /* Tablets/iPad */ @media only screen and (min-width: 768px) and (max-width: 1199px) {
 
+div.tabletproducttext {
 
+display: justify;
+
+padding: 10px;
+}
 
 div.tabletbild {
   display: block;
@@ -164,9 +179,20 @@ div.tabletbild {
 
 /* Mobiltelefoner/iPhone */ @media only screen and (max-width: 767px) {
 
+div.producttextmobile {
+
+  font-size: 5vw;
+  padding: 15px;
+ 
+ }
+
+
 div.mobilebild {
-    width: 50%;
-    height: auto;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
 }
 
 div.tabletbild {
@@ -244,7 +270,5 @@ img {
 }
 
 
-
- 
 
     
