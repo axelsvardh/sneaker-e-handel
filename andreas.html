@@ -25,13 +25,44 @@
 <main class="container">
 		<section class="section1"><h1>HEADER</h1></section>
 		<section class="section2"><h1>Nike x Dior Air Jordan 1
-									  </h1> Artikelnummer: 3456215-1 </section>
-		<section class="section3"> <img src="bilder/Produktbild-air-jordan-1-dior-01.jpg" alt="Air Jordan 1 Dior" width="350" height="250" ></section>
+			<br>
+									  </h1> <h3>Articlenumber: 3456215-1</h3>
+
+<div class="desktoptext">Made in Italy.
+<p>Upper : Maison Dior’s leather goods, edge-painted and dressed in Dior Grey.
+<br>
+<br>
+Sole: Dior emblem. Air Dior.
+<br>
+<br>
+The same Dior motif is scaled down and laser-etched into the insoles at a 50 percent scale.
+<br>
+<br>
+The Nike Swoosh is executed in Dior Oblique jacquard.<p> </div>
+
+
+
+									</section>
+		<section class="section3"> <img src="bilder/Produktbild-air-jordan-1-dior-01.jpg" alt="Air Jordan 1 Dior" width="250" height="150" ></section>
 		<section class="section4">
 
 
 			 <img src="bilder/Produkbild-3-jordan-dior-soles.jpg" id="myImage" width="100" height="150">
-    <input type="button" onclick="changeImage()" value="Change" />
+    <button class="button" onclick="changeImage()" value="Change"> Next pic</button>
+    <script>
+        function changeImage() {
+            var image = document.getElementById('myImage');
+            if (image.src.match("bilder/Produktbild-air-jordan-1-zoom.jpg")) {
+                image.src = "bilder/Produkbild-3-jordan-dior-soles.jpg";
+            }
+            else {
+                image.src = "bilder/Produktbild-air-jordan-1-zoom.jpg";
+            }
+        }
+    </script>
+
+	 <img src="bilder/Produkbild-3-jordan-dior-soles.jpg" id="myImage" width="100" height="150">
+    <button class="button" onclick="changeImage()" value="Change"> Next pic</button>
     <script>
         function changeImage() {
             var image = document.getElementById('myImage');
@@ -46,10 +77,6 @@
 
 
 
-
-
-
-
 		</section>
 		
 
@@ -60,27 +87,14 @@
 
 		<p>Coinciding with the 35th anniversary of the Air Jordan and celebrating the first Dior men’s collection debut in the United States, the collaborative, limited-edition Air Jordan 1 High OG underscores both the timeless appeal of the shoe and the emblematic style of Maison Dior — born always on l’air du temps, the spirit of the moment.</p>
 
+		<div class="desktoptext">With this partnership, the different cultures of America and France and of haute couture and high-performance sportswear are drawn together, unified and then blended to create a new hybrid look. The heritage of both brands is valued, respected and each is given equal gravitas. Jordan Brand’s footprint of innovation and product excellence is echoed in the élan of the Parisian ateliers of Dior men..</div>
+
+    
 
 
-    <div id=”content-desktop”>
-    This is the content that will display on DESKTOPS.
 
 
-    <p>Coinciding with the 35th anniversary of the Air Jordan and celebrating the first Dior men’s collection debut in the United States, the collaborative, limited-edition Air Jordan 1 High OG underscores both the timeless appeal of the shoe and the emblematic style of Maison Dior — born always on l’air du temps, the spirit of the moment.</p>
-    </div>
 
-    <div id=”content-mobile”>
-    This is the content that will display on MOBILE DEVICES.
-    </div>
-
-
-<div id=”content-desktop”>
-<p> hejsan </p>
-</div>
-
-<div id=”content-mobile”>
-<p> svejsan </p>
-</div>
 
 
 

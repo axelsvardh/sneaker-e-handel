@@ -189,24 +189,14 @@ section {
 }
 
 
-    #content-desktop {display: block;}
-    #content-mobile {display: none;}
+    
 
 /* Mobiltelefoner/iPhone */ @media only screen and (max-width: 767px) {
 
 
- #content-desktop {
+  div.desktoptext {
     display: none;
-    }
-
-    #content-mobile {
-    display: inline;
-    }
- 
-
-
-   .content-desktop {display: none;}
-    .content-mobile {display: block;}
+  }
 
 .container {
     display: grid;
@@ -273,14 +263,6 @@ img {
 
 
 
-    
-    #content-desktop {
-    display: none;
-    }
-
-    #content-mobile {
-    display: inline;
-    }
  
 
     
