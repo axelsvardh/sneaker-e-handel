@@ -1,12 +1,14 @@
 
 /* CSS för både mobile/tablet/desktop */
 
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300&display=swap%27');
 
 
 body {
 color: grey;
 background-color: lightgrey;
 text-align: center;
+font-family: 'Quicksand', sans-serif;
 
 }
 
@@ -125,7 +127,7 @@ div.abouttextdesktop
 
 text-align: justify;
 padding:20px;
-font-size: 2vw;
+font-size: 1.5vw;
 
 }
 
@@ -177,9 +179,6 @@ div.tabletbild
   }
 
  }
-
-
-
 
 
 /* Tablets/iPad */ @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -265,7 +264,7 @@ div.tabletbild
 div.producttextmobile 
 {
 
-  font-size: 5vw;
+  font-size: 4.5vw;
   padding: 15px;
  
  }
@@ -278,6 +277,17 @@ display: block;
   margin-right: auto;
   width: 50%;
 
+}
+
+
+div.mainmobilebild
+
+{display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 100%;
+  margin-top: 60px;
 }
 
 /* Container som används specifikt för Mobiltelefoner/iPhone */
