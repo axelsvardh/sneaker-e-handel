@@ -150,10 +150,14 @@ div.tabletbild
 
 .container{
 
+
+    margin-top: 200px;
     text-align: center;
     display: grid;
     height: 100%;
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 200px;
     grid-gap: 2%;
     grid-template-columns: repeat(12, 1fr); 
     grid-template-rows: repeat(4, 1fr);
