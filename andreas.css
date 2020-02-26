@@ -8,6 +8,31 @@ section {
 }
 
 
+
+.section2 h1
+
+{font-size: 30px;}
+
+
+.section5 h1
+
+{font-size: 30px;}
+
+.section6 h1
+
+{font-size: 30px;}
+
+
+
+.section2 h3
+
+{font-size: 20px;}
+
+
+
+
+
+
 .section4bilder {
 
 padding-top: 50px;
@@ -21,6 +46,11 @@ padding-top: 50px;
   font-weight: bolder;
   background-color: white;
   border: 2px solid grey;
+  margin:10px;
+}
+
+.arprice h1 {
+  font-size: 4vw;
 }
 
 .lookbutton {
@@ -123,6 +153,7 @@ div.producttextdesktop
 {
     text-align: left;
     padding: 10px;
+    font-size: 12px;
 
 }
 
@@ -131,7 +162,7 @@ div.abouttextdesktop
 {
 
 text-align: justify;
-padding:20px;
+padding:50px;
 font-size: 1.5vw;
 
 }
@@ -199,7 +230,8 @@ padding: 10px;
 div.tabletbild 
 {
   display: block;
-  margin-top: 65px;
+  margin-top: 200px;
+  margin-bottom: 170px;
 }
 
 
