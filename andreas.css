@@ -2,18 +2,22 @@
 /* CSS för både mobile/tablet/desktop */
 
 
-
-
 body {
 
 text-align: center;
-
 
 }
 
 
 section {
     border: 2px solid darkgrey;
+
+}
+
+
+.section4bilder {
+
+padding-top: 50px;
 
 }
 
@@ -26,7 +30,7 @@ section {
   border: 2px solid grey;
 }
 
-.button {
+.lookbutton {
   border: 2px solid darkgrey;
   border-radius: 90px;
   outline: 0;
@@ -35,7 +39,7 @@ section {
   background-color: lightgrey;
   text-align: center;
   width: 100px;
-  height: 50px;
+  height: 75px;
   margin: 5px;
   font-size: 18px;
 
@@ -53,13 +57,10 @@ section {
   height: 100px;
   margin: 5px;
   font-size: 30px;
-
-
-
 }
 
 
-.button:hover {
+.lookbutton:hover {
   opacity: 0.7;
   cursor:all-scroll;
   background-color:lightsteelblue;
@@ -78,6 +79,7 @@ section {
 img {
   width: 100%;
   height: auto;
+
 }
 
 
