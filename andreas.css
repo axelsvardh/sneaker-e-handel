@@ -1,14 +1,13 @@
 
 /* CSS för både mobile/tablet/desktop */
 
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300&display=swap%27');
+
 
 
 body {
-color: grey;
-background-color: lightgrey;
+
 text-align: center;
-font-family: 'Quicksand', sans-serif;
+
 
 }
 
@@ -82,12 +81,7 @@ img {
 }
 
 
-
-
 /* Sections */ 
-
-
-
 
 
 .section2 {
@@ -117,21 +111,6 @@ img {
     padding: 20px;
 }
 
-.footer1 {
-    grid-area: footer1;
-}
-
-.footer2 {
-    grid-area: footer2;
-}
-
-.footer3 {
-    grid-area: footer3;
-}
-
-.footer4 {
-    grid-area: footer4;
-}
 
 /* Breda desktopskärmar */ @media only screen and (min-width: 1200px) {
 
@@ -182,8 +161,7 @@ div.tabletbild
     grid-template-areas: 
 
 "box1 box1 box2 box2 box2 box2 box2 box2 box2 box2 box3 box3" 
-"content content content content content content content content content sidebar sidebar sidebar" 
-"footer footer footer footer footer footer footer footer footer footer footer footer";
+"content content content content content content content content content sidebar sidebar sidebar" ;
 
 
 }
@@ -244,9 +222,7 @@ div.tabletbild
     grid-template-areas: 
      
         "box1 box1 box1 box1 box2 box2 box2 box2 box3 box3 box3 box3" 
-        "content content content content content content sidebar sidebar sidebar sidebar sidebar sidebar" 
-        "footer footer footer footer footer footer footer footer footer footer footer footer"
-        "footer footer footer footer footer footer footer footer footer footer footer footer";
+        "content content content content content content sidebar sidebar sidebar sidebar sidebar sidebar";
     
 }
 
@@ -345,8 +321,7 @@ div.mainmobilebild
     "box2 box2 box2 box2"
     "box3 box3 box3 box3"
     "content content content content"
-    "sidebar sidebar sidebar sidebar"
-    "footer footer footer footer";  
+    "sidebar sidebar sidebar sidebar";  
 }
 
 .section7 {
