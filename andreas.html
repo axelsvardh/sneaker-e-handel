@@ -6,6 +6,7 @@
 
 
 <link rel="stylesheet" type="text/css" href="andreas.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
 
 
 <meta name="author" content="Andreas Ronvall">
@@ -18,12 +19,60 @@
 </head>
 <body>
 
-
+<header class="header-mobile">
+		<h1 class="logo">
+			<a href="index.html">
+				<img src="bilder/colab-logo-done.png">
+			</a>
+		</h1>
+                 <!--Toggle-->
+		    <input type="checkbox" id="nav-toggle-menu">
+		      <label class="nav-toggle-menu" for="nav-toggle-menu">
+			        <span></span>
+			        <span></span>
+		    	</label>
+		    	
+			<nav class="menu-off-canvas">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+	                <li><a href="product-page.html">Products</a></li>
+	                <li><a href="#">Contact</a></li>
+	                <li><a href="#">About us</a></li>	
+				</ul>
+				<div class="nav-socials">
+					<a href="#"><img src="bilder/facebook.png" width="32" height="32"></a>
+					<a href="#"><img src="bilder/insta-icon.png" width="34" height="34"></a>	
+				</div>		
+			</nav>
+			<input type="checkbox" id="nav-toggle-shopping-bag">
+				<label class="nav-toggle-shopping-bag" for="nav-toggle-shopping-bag">
+    					<img src="bilder/shop-bag.png">
+				</label>
+			<div class="shopping-bag-off-canvas">
+					<div class="price">Total: $2000</div>
+			</div>
+	</header>
+		<div class="wrapper-desktop">
+	        <div class="nav-logo">
+	            <img src="bilder/collab-logo.png" alt="Logo">
+	        </div>
+	        <div class="nav-shop-icon">
+	            <a href="#"><img src="bilder/shop-bag.png" alt="Logo"></a>
+	        </div>
+	        <nav class="menu">
+	            <ul>
+	                <li><a href="index.html">Home</a></li>
+	                <li><a href="product-page.html">Products</a></li>
+	                <li><a href="#">Contact</a></li>
+	                <li><a href="#">About us</a></li>
+	            </ul>
+	        </nav>
+	    </div>
 
 
 
 <main class="container">
-		<section class="section1"><h1>HEADER</h1></section>
+		
 	<section class="section2">
 
 <div class="articleproducttextmobile ">
@@ -159,11 +208,7 @@
 		</section>
 
 
-		<footer class="section7">
-            <section class="footer1"><h1>FOOTER 1</h1></section>
-            <section class="footer2"><h1>FOOTER 2</h1></section>
-            <section class="footer3"><h1>FOOTER 3</h1></section>
-            <section class="footer4"><h1>FOOTER 4</h1></section>
+		
         </footer>
 	</main>
 

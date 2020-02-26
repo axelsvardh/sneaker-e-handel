@@ -88,9 +88,7 @@ img {
 
 
 
-.section1 {
-    grid-area: header;
-}
+
 
 .section2 {
     grid-area: box1;
@@ -140,6 +138,11 @@ img {
 
 /* Text specifikt för Desktop */ 
 
+
+.header-mobile {
+    display: none;
+}
+
 div.producttextdesktop
 
 {
@@ -177,7 +180,7 @@ div.tabletbild
     grid-template-columns: repeat(12, 1fr); 
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: 
-"header header header header header header header header header header header header" 
+
 "box1 box1 box2 box2 box2 box2 box2 box2 box2 box2 box3 box3" 
 "content content content content content content content content content sidebar sidebar sidebar" 
 "footer footer footer footer footer footer footer footer footer footer footer footer";
@@ -185,7 +188,7 @@ div.tabletbild
 
 }
 
-.header { grid-area: header; } 
+
 .box1 { grid-area: box1; }
 .box2 { grid-area: box2; }
 .box3 { grid-area: box3; }
@@ -239,7 +242,7 @@ div.tabletbild
     grid-template-columns: repeat(12, 1fr); 
     grid-template-rows: repeat(6, minmax(200px, 1fr));
     grid-template-areas: 
-        "header header header header header header header header header header header header" 
+     
         "box1 box1 box1 box1 box2 box2 box2 box2 box3 box3 box3 box3" 
         "content content content content content content sidebar sidebar sidebar sidebar sidebar sidebar" 
         "footer footer footer footer footer footer footer footer footer footer footer footer"
@@ -247,7 +250,7 @@ div.tabletbild
     
 }
 
-.header { grid-area: header; } 
+
 .box1 { grid-area: box1; }
 .box2 { grid-area: box2; }
 .box3 { grid-area: box3; }
@@ -337,7 +340,7 @@ div.mainmobilebild
     grid-template-rows: repeat(6, minmax(200px, 1fr));
     grid-gap: 2% 2%;
     grid-template-areas: 
-    "header header header header"
+   
     "box1 box1 box1 box1"
     "box2 box2 box2 box2"
     "box3 box3 box3 box3"
