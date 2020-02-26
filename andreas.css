@@ -2,11 +2,7 @@
 /* CSS för både mobile/tablet/desktop */
 
 
-body {
 
-text-align: center;
-
-}
 
 
 section {
@@ -153,6 +149,7 @@ div.tabletbild
 /* Container som används specifikt för Desktops*/
 
 .container{
+
     text-align: center;
     display: grid;
     height: 100%;
@@ -215,6 +212,7 @@ div.tabletbild
 /* Container som används specifikt för tablets */
 
 .container {
+    text-align: center;
     display: grid;
     height: 100%;
     margin: 20px;
@@ -311,6 +309,7 @@ div.mainmobilebild
 /* Container som används specifikt för Mobiltelefoner/iPhone */
 
 .container {
+    text-align: center;
     display: grid;
     width: 90%;
     margin: 20px;
