@@ -18,8 +18,7 @@
 .wrapper-desktop {
 	display: none;
 }
-	/*hej*/
-	/*Header*/
+	/* Header */
 
 .header-mobile {
 	text-align: center;
@@ -41,6 +40,8 @@
 	height: 300px;
 	object-fit: cover;
 }
+	
+	/* Menu */
 
 ul {
 	list-style: none;
@@ -115,7 +116,7 @@ input[type=checkbox] {
 .menu-off-canvas a:hover { color: #000; border-bottom: 1px solid #000;}
 .menu-off-canvas a:link { color: #000; text-decoration: none;}
 	
-	/*Shopping bag code*/
+	/* Shopping bag code */
 
 .shopping-bag-off-canvas {
 	width: 78%;
@@ -203,7 +204,7 @@ input[type=checkbox] {
 	width: 100px;
 }
 	
-	/*Slide items*/
+	/* Slide items */
 
 h2 {
 	padding-left: 10px;
@@ -249,7 +250,7 @@ h2 {
 	height: 80px;
 }
 
-	/*Blog part*/
+	/* Blog part */
 
 .blog-post1 img {
 	margin-top: 20px;
@@ -283,7 +284,7 @@ h2 {
 .blog-post2 a { border-bottom: 1px solid #555; color: #555; }
 .blog-post2 a:hover { color: #000; }
 
-	/*Footer*/
+	/* Footer */
 
 .footer {
     grid-area: foot;
@@ -585,7 +586,7 @@ h2 {
 			margin-right: 0px;
 		}
 
-		/*Desktop products*/
+		/* Desktop products */
 
 		.slide-items a {
 			margin-right: 10px;
@@ -625,7 +626,9 @@ h2 {
 			padding: 0 20px;
 		}
 
-		.footer-container{
+			/* Footer */
+
+		.footer-container {
 			background-color: #eee;
 		    grid-template-columns: repeat(4, 1fr);
 		    grid-template-rows: repeat(1, minmax(200px, 1fr));
