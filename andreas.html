@@ -2,10 +2,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>Collab - Nike x Dior Air Jordan 1</title>
 
-
 <link rel="stylesheet" type="text/css" href="andreas.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
 
 
 <meta name="author" content="Andreas Ronvall">
@@ -18,98 +19,188 @@
 </head>
 <body>
 
+<header class="header-mobile">
+		<h1 class="logo">
+			<a href="index.html">
+				<img src="bilder/colab-logo-done.png">
+			</a>
+		</h1>
+                 <!--Toggle-->
+		    <input type="checkbox" id="nav-toggle-menu">
+		      <label class="nav-toggle-menu" for="nav-toggle-menu">
+			        <span></span>
+			        <span></span>
+		    	</label>
+		    	
+			<nav class="menu-off-canvas">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+	                <li><a href="product-page.html">Products</a></li>
+	                <li><a href="#">Contact</a></li>
+	                <li><a href="#">About us</a></li>	
+				</ul>		
+			</nav>
+			
+<input type="checkbox" id="nav-toggle-shopping-bag">
+                <label class="nav-toggle-shopping-bag" for="nav-toggle-shopping-bag">
+                        <img src="bilder/shop-bag.png">
+                </label>
+            <div class="shopping-bag-off-canvas">
+                    <img src="bilder/dior-jordan-cutout.png">
+                        <p>Dior X Jordan</p>
+                <div class="text-shopping-bag">
+                        <p>Quantity: 1</p>
+                        <p>Size: 43</p>
+                </div>
+                <div class="checkout-button">
+                    <h1>Total: $2000</h1>
+                    <button>Checkout</button>
+                </div>
+            </div>
 
+			</div>
+	</header>
+		<div class="wrapper-desktop">
+	        <div class="nav-logo">
+	            <img src="bilder/collab-logo.png" alt="Logo">
+	        </div>
+	       
+	        <nav class="menu">
+	            <ul>
+	                <li><a href="index.html">Home</a></li>
+	                <li><a href="product-page.html">Products</a></li>
+	                <li><a href="#">Contact</a></li>
+	                <li><a href="#">About us</a></li>
+	            </ul>
+	        </nav>
+
+				<input type="checkbox" id="shopping-bag-desktop">
+                <label class="shopping-bag-desktop" for="shopping-bag-desktop">
+                        <img src="bilder/shop-bag.png">
+                </label>
+            <div class="shopping-bag-off-canvas-desktop">
+                    <img src="bilder/dior-jordan-cutout.png">
+                        <p>Dior X Jordan</p>
+                <div class="text-shopping-bag">
+                        <p>Quantity: 1</p>
+                        <p>Size: 43</p>
+                </div>
+                <div class="checkout-button">
+                    <h1>Total: $2000</h1>
+                    <button>Checkout</button>
+                </div>
+            </div>
+
+	    </div>
 
 
 
 <main class="container">
-		<section class="section1"><h1>HEADER</h1></section>
+		
 	<section class="section2">
 
-<div class="articleproducttextmobile ">
-		<h1>Nike x Dior Air Jordan 1 </h1>
-		
-								 <h3>Article-number: 3456215-1</h3>
+		<div class="articleproducttextmobile ">
+					<h1>Nike x Dior Air Jordan 1 </h1>
+				<br>
+					<h3>Article-number: 3456215-1</h3>
 
-</div>
+				<br>
+
+
+
+	   </div>
 	<div class="producttextdesktop">
 
-	<div class="desktoptext">
-			 Made in Italy.
-			<p><b>Upper</b> : Maison Dior’s leather goods, edge-painted and dressed in Dior Grey.
-			<br>
-			<br>
-			<b>Sole:</b> Dior emblem. Air Dior.
-			<br>
-			<br>
-			The same Dior motif is scaled down and laser-etched into the insoles at a 50 percent scale.
-			</p> </div>
+		<div class="desktoptext">
+			 	<p><b>Origin of product:<br></b> Made in Italy.<p>
+			 		<br>
+				<p><b>Upper</b> : Maison Dior’s leather goods, edge-painted and dressed in Dior Grey.
+				<br>
+				<br>
+				<b>Sole:</b> Dior emblem. Air Dior.
+				<br>
+				<br>
 
 
-		</div>
+				The same Dior motif is scaled down and laser-etched into the insoles at a 50 percent scale.
+				</p> 
 
+			</div>
+
+		</div>	
 
 	</section>
 
 	
 		
-		<section class="section3"> 
+	<section class="section3"> 
 
-<div class="mainmobilebild">
+			<div class="mainmobilebild">
 
-			<img src="bilder/Produktbild-air-jordan-1-dior-01.jpg" alt="Air Jordan 1 Dior" width="250" height="150" >
+				<img src="bilder/Produktbild-air-jordan-1-dior-01.jpg" alt="Air Jordan 1 Dior" width="250" height="150" >
 
-</div>
+			</div>
 		
-		<div class="tabletbild"> <img src="bilder/DIOR-Nike.jpg" alt="Air Jordan 1 Dior Side" width="250" height="150" ></div>
+		<div class="tabletbild"> <img src="bilder/DIOR-Nike.jpg" alt="Air Jordan 1 Dior Side" width="250" height="150" >
+		</div>
 
 
 
-		</section>
+	</section>
 		
-		<section class="section4">
+	<section class="section4">
+
+
+
+
+			<div class="section4bilder">
+
 
 
 			<div class="mobilebild">
 
 
-			<img src="bilder/Produkbild-3-jordan-dior-soles.jpg" id="myImage1" width="100" height="150">
-    		<button class="button" onclick="changeImage1()" value="Change1"> Next img </button>
-    		<script>
-	        	function changeImage1() {
-	            var image = document.getElementById('myImage1');
-	            if (image.src.match("bilder/Produktbild-air-jordan-1-zoom.jpg")) {
-	                image.src = "bilder/Produkbild-3-jordan-dior-soles.jpg";
-	            }
-	            else {
-	                image.src = "bilder/Produktbild-air-jordan-1-zoom.jpg";
-	            }
-        	}
-    		</script>
+					<img src="bilder/Produkbild-3-jordan-dior-soles.jpg" id="myImage1" width="100" height="150">
+		    		<button class="lookbutton" onclick="changeImage1()" value="Change1"> Next img </button>
+		    		<script>
+			        	function changeImage1() {
+			            var image = document.getElementById('myImage1');
+			            if (image.src.match("bilder/Produktbild-air-jordan-1-zoom.jpg")) {
+			                image.src = "bilder/Produkbild-3-jordan-dior-soles.jpg";
+			            }
+			            else {
+			                image.src = "bilder/Produktbild-air-jordan-1-zoom.jpg";
+			            }
+		        		}
+		    		</script>
+			
 
-			<img src="bilder/Dior-Air-Jordan-1-High-OG-Release-Date-4.jpg" id="myImage2" width="100" height="150">
-		    <button class="button" onclick="changeImage2()" value="Change2"> Next img</button>
-		    <script>
-		        	function changeImage2() {
-		            var image = document.getElementById('myImage2');
-		            if (image.src.match("bilder/air-jordan-1-dior-02x.jpg")) {
-		                image.src = "bilder/Dior-Air-Jordan-1-High-OG-Release-Date-4.jpg";
-		            }
-		            else {
-		                image.src = "bilder/air-jordan-1-dior-02x.jpg";
-		            }
-		        	}
-		    </script>
+					<div class="section4bilder">
+
+					<img src="bilder/Dior-Air-Jordan-1-High-OG-Release-Date-4.jpg" id="myImage2" width="100" height="150">
+				    <button class="lookbutton" onclick="changeImage2()" value="Change2"> Next img</button>
+				    <script>
+				        	function changeImage2() {
+				            var image = document.getElementById('myImage2');
+				            if (image.src.match("bilder/air-jordan-1-dior-02x.jpg")) {
+				                image.src = "bilder/Dior-Air-Jordan-1-High-OG-Release-Date-4.jpg";
+				            }
+				            else {
+				                image.src = "bilder/air-jordan-1-dior-02x.jpg";
+				            }
+				        	}
+				    </script>
+
+					</div>
 
 		</div>
 
-		</section>
+	</section>
 		
 
+	<section class="section5">
 
-
-
-		<section class="section5"><h1>About this masterpiece:</h1>
+		<h1>About this masterpiece:</h1>
 
 		<div class="producttextmobile">
 
@@ -118,18 +209,18 @@
 		<div class="tabletproducttext">
 
 		<p>Coinciding with the 35th anniversary of the Air Jordan and celebrating the first Dior men’s collection debut in the United States, the collaborative, limited-edition Air Jordan 1 High OG underscores both the timeless appeal of the shoe and the emblematic style of Maison Dior — born always on l’air du temps, the spirit of the moment.</p>
-
+		<br>
 		<div class="desktoptext">With this partnership, the different cultures of America and France and of haute couture and high-performance sportswear are drawn together, unified and then blended to create a new hybrid look. The heritage of both brands is valued, respected and each is given equal gravitas. Jordan Brand’s footprint of innovation and product excellence is echoed in the élan of the Parisian ateliers of Dior men..</div>
 
-	</div>
+		</div>
 
-	</div>
+		</div>
 
-	</div>
+		</div>
 
-		</section>
+	</section>
 		
-		<section class="section6">
+	<section class="section6">
 
 			
 			<div class ="arprice">
@@ -156,16 +247,49 @@
 		<button class="buybutton" onclick="alert('Thank you for buying this special Nike x Dior Air Jordan 1 product ! You will now be redirected to the Checkout to finish your purchase:)')">Buy</button>
 
 
-		</section>
+	</section>
 
+		
+		</main>
 
-		<footer class="section7">
-            <section class="footer1"><h1>FOOTER 1</h1></section>
-            <section class="footer2"><h1>FOOTER 2</h1></section>
-            <section class="footer3"><h1>FOOTER 3</h1></section>
-            <section class="footer4"><h1>FOOTER 4</h1></section>
+<section class="section7">
+
+		<div class="footer-container-grid">
+           <footer class="footer">
+            <div class="footer-custom">
+                <h1>About us</h1>
+                <h3><a href="#">Company</a></h3>
+                <h3><a href="#">Privacy policy</a></h3>
+                <h3><a href="#">Careers</a></h3>
+            </div>
+            <div>
+                <h1>Contact</h1>
+                <h3>Tel:<a href="tel:12345678910"> 123 456 78 90</a></h3>
+                <h3>Mail:<a href="mailto:someone@example.com"> collab@gmail.com</a></h3>
+            </div>
+            <div>
+                <h1>Help</h1>
+                <h3><a href="#">FaQ</a></h3>
+                <h3><a href="#">Authenticat</a></h3>
+                <h3><a href="#">Shipping</a></h3>
+            </div>
+
+            <div class="footer-right">
+                <div  class="footer-logo">
+                    <a href="index.html"><img src="bilder/collab-logo.png" alt=""></a>
+                </div>
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="bilder/facebook.png" alt=""></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="bilder/instagram.png" alt=""></a>
+                </div>
+            </div>
         </footer>
-	</main>
+    </div>
+
+</section>
+
+
+
 
 </body>
 </html>

@@ -1,20 +1,41 @@
 
 /* CSS för både mobile/tablet/desktop */
 
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300&display=swap%27');
-
-
-body {
-color: grey;
-background-color: lightgrey;
-text-align: center;
-font-family: 'Quicksand', sans-serif;
+section {
+    border: 2px solid darkgrey;
+    padding:30px;
 
 }
 
 
-section {
-    border: 2px solid darkgrey;
+
+.section2 h1
+
+{font-size: 30px;}
+
+
+.section5 h1
+
+{font-size: 30px;}
+
+.section6 h1
+
+{font-size: 30px;}
+
+
+
+.section2 h3
+
+{font-size: 20px;}
+
+
+
+
+
+
+.section4bilder {
+
+padding-top: 50px;
 
 }
 
@@ -25,9 +46,14 @@ section {
   font-weight: bolder;
   background-color: white;
   border: 2px solid grey;
+  margin:10px;
 }
 
-.button {
+.arprice h1 {
+  font-size: 4vw;
+}
+
+.lookbutton {
   border: 2px solid darkgrey;
   border-radius: 90px;
   outline: 0;
@@ -36,7 +62,7 @@ section {
   background-color: lightgrey;
   text-align: center;
   width: 100px;
-  height: 50px;
+  height: 75px;
   margin: 5px;
   font-size: 18px;
 
@@ -54,13 +80,10 @@ section {
   height: 100px;
   margin: 5px;
   font-size: 30px;
-
-
-
 }
 
 
-.button:hover {
+.lookbutton:hover {
   opacity: 0.7;
   cursor:all-scroll;
   background-color:lightsteelblue;
@@ -79,18 +102,12 @@ section {
 img {
   width: 100%;
   height: auto;
+
 }
-
-
 
 
 /* Sections */ 
 
-
-
-.section1 {
-    grid-area: header;
-}
 
 .section2 {
     grid-area: box1;
@@ -115,36 +132,28 @@ img {
 .section7 {
     
     grid-area: footer;
-    border: 1px solid black;
+  
     padding: 20px;
 }
 
-.footer1 {
-    grid-area: footer1;
-}
 
-.footer2 {
-    grid-area: footer2;
-}
-
-.footer3 {
-    grid-area: footer3;
-}
-
-.footer4 {
-    grid-area: footer4;
-}
 
 /* Breda desktopskärmar */ @media only screen and (min-width: 1200px) {
 
 
 /* Text specifikt för Desktop */ 
 
+
+.header-mobile {
+    display: none;
+}
+
 div.producttextdesktop
 
 {
     text-align: left;
     padding: 10px;
+    font-size: 12px;
 
 }
 
@@ -153,7 +162,7 @@ div.abouttextdesktop
 {
 
 text-align: justify;
-padding:20px;
+padding:50px;
 font-size: 1.5vw;
 
 }
@@ -169,41 +178,37 @@ div.tabletbild
 /* Container som används specifikt för Desktops*/
 
 .container{
+
+
+    margin-top: 200px;
     text-align: center;
     display: grid;
     height: 100%;
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 100px;
+    margin-bottom: 50px;
     grid-gap: 2%;
     grid-template-columns: repeat(12, 1fr); 
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
-"header header header header header header header header header header header header" 
+
 "box1 box1 box2 box2 box2 box2 box2 box2 box2 box2 box3 box3" 
 "content content content content content content content content content sidebar sidebar sidebar" 
-"footer footer footer footer footer footer footer footer footer footer footer footer";
+
 
 
 }
 
-.header { grid-area: header; } 
+
 .box1 { grid-area: box1; }
 .box2 { grid-area: box2; }
 .box3 { grid-area: box3; }
 .content { grid-area: content; }
 .sidebar { grid-area: sidebar; }
-.section7 {
-    
-    grid-area: footer;
-    display: grid;
-    width: 100%;
-    padding: 2px;
-    height: 100%;
-    grid-template-columns: repeat(4,1fr );
-    grid-template-rows: 200px;
-    grid-row-gap: 10%; 
-    grid-column-gap: 2.5%;
-    grid-template-areas: "footer1 footer2 footer3 footer4";                     
-  }
+.footer {grid-area: footer; }
+
+
 
  }
 
@@ -225,47 +230,38 @@ padding: 10px;
 div.tabletbild 
 {
   display: block;
-  margin-top: 65px;
+  margin-top: 200px;
+  margin-bottom: 170px;
 }
 
 
 /* Container som används specifikt för tablets */
 
 .container {
+    text-align: center;
     display: grid;
     height: 100%;
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top:100px;
+    margin-bottom: 50px;
     grid-gap: 2%;
     grid-template-columns: repeat(12, 1fr); 
-    grid-template-rows: repeat(6, minmax(200px, 1fr));
+    grid-template-rows: repeat(1, minmax(200px, 1fr));
     grid-template-areas: 
-        "header header header header header header header header header header header header" 
+     
         "box1 box1 box1 box1 box2 box2 box2 box2 box3 box3 box3 box3" 
-        "content content content content content content sidebar sidebar sidebar sidebar sidebar sidebar" 
-        "footer footer footer footer footer footer footer footer footer footer footer footer"
-        "footer footer footer footer footer footer footer footer footer footer footer footer";
+        "content content content content content content sidebar sidebar sidebar sidebar sidebar sidebar";
     
 }
 
-.header { grid-area: header; } 
+
 .box1 { grid-area: box1; }
 .box2 { grid-area: box2; }
 .box3 { grid-area: box3; }
 .content { grid-area: content; }
 .sidebar { grid-area: sidebar; }
-.section7 {
-    display: grid;
-    padding: 5px;
-    height: 100%;
-    width: 100%;
-    grid-template-columns: repeat(4, );
-    grid-template-rows: 200px;
-    grid-row-gap: 5%; 
-    grid-column-gap: 2.5%;
-    grid-template-areas: "footer1 footer2" 
-                         "footer3 footer4 ";
-    grid-area: footer;
-}
+
 
 }
 
@@ -330,32 +326,26 @@ div.mainmobilebild
 /* Container som används specifikt för Mobiltelefoner/iPhone */
 
 .container {
+    text-align: center;
     display: grid;
     width: 90%;
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top:100px;
+    margin-bottom: 250px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, minmax(200px, 1fr));
     grid-gap: 2% 2%;
     grid-template-areas: 
-    "header header header header"
+   
     "box1 box1 box1 box1"
     "box2 box2 box2 box2"
     "box3 box3 box3 box3"
     "content content content content"
-    "sidebar sidebar sidebar sidebar"
-    "footer footer footer footer";  
+    "sidebar sidebar sidebar sidebar";  
 }
 
-.section7 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, minmax(200px, 1fr));
-    grid-template-areas: 
-    "footer1 footer1 footer1 footer1"
-    "footer2 footer2 footer2 footer2"
-    "footer3 footer3 footer3 footer3"
-    "footer4 footer4 footer4 footer4";
-}
+
 
 }
 
