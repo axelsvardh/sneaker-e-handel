@@ -10,47 +10,74 @@
 </head>
 <body>
     <header class="header-mobile">
-		<h1 class="logo">
-			<a href="index.html">
-				<img src="../a_1/bilder/colab-logo-done.png">
-			</a>
-		</h1>
-		 <div class="wrapper">
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="bilder/colab-logo-done.png">
+            </a>
+        </h1>
                  <!--Toggle-->
-		    <input type="checkbox" id="nav-toggle">
-		      <label class="nav-toggle" for="nav-toggle">
-		        <span></span>
-		        <span></span>
-		    </label>
-
-			<nav class="menu-off-canvas">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Sneakers</a></li>
-					<li><a href="#">About</a></li>	
-				</ul>
-				<div class="nav-socials">
-					<a href="#"><img src="../a_1/bilder/facebook.png" width="32" height="32"></a>
-					<a href="#"><img src="../CME/bilder/insta-icon.png" width="34" height="34"></a>	
-				</div>		
-			</nav>
-	</header>
-    <div class="wrapper-desktop">
-        <div class="nav-logo">
-            <img src="bilder/collab-logo.png" alt="Logo">
+            <input type="checkbox" id="nav-toggle-menu">
+              <label class="nav-toggle-menu" for="nav-toggle-menu">
+                    <span></span>
+                    <span></span>
+                </label>
+                
+            <nav class="menu-off-canvas">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product-page.html">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About us</a></li>   
+                </ul>       
+            </nav>
+            <input type="checkbox" id="nav-toggle-shopping-bag">
+                <label class="nav-toggle-shopping-bag" for="nav-toggle-shopping-bag">
+                        <img src="bilder/shop-bag.png">
+                </label>
+            <div class="shopping-bag-off-canvas">
+                    <img src="bilder/dior-jordan-cutout.png">
+                        <p>Dior X Jordan</p>
+                <div class="text-shopping-bag">
+                        <p>Quantity: 1</p>
+                        <p>Size: 43</p>
+                </div>
+                <div class="checkout-button">
+                    <h1>Total: $2000</h1>
+                    <button>Checkout</button>
+                </div>
+            </div>
+    </header>
+		<div class="wrapper-desktop">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="bilder/collab-logo.png" alt="Logo">
+                </a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product-page.html">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </nav> 
+            <input type="checkbox" id="shopping-bag-desktop">
+                <label class="shopping-bag-desktop" for="shopping-bag-desktop">
+                        <img src="bilder/shop-bag.png" alt="Cart">
+                </label>
+            <div class="shopping-bag-off-canvas-desktop">
+                    <img src="bilder/dior-jordan-cutout.png">
+                        <p>Dior X Jordan</p>
+                <div class="text-shopping-bag">
+                        <p>Quantity: 1</p>
+                        <p>Size: 43</p>
+                </div>
+                <div class="checkout-button">
+                    <h1>Total: $2000</h1>
+                    <button>Checkout</button>
+                </div>
+            </div>
         </div>
-        <div class="nav-shop-icon">
-            <a href="#"><img src="bilder/shop-bag.png" alt="Logo"></a>
-        </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About us</a></li>
-            </ul>
-        </nav>
-    </div>
   
     <nav class="product-filter">
         <h1>Sneakers</h1>
@@ -89,112 +116,112 @@
     </nav>
     <section class="products">
         <div class="product-card">
-            <a href="#" class="product-link">
+            <a href="andreas.html" class="product-link">
             <div class="product-image">
                 <img src="bilder/bapesta.jpg" alt="Bapesta">
             </div>
             <div class="product-info">
-                <h5>Sneaker</h5>
-                <h6>€99.99</h6>
+                <h5>Bapesta</h5>
+                <h6>$4000</h6>
             </div>
             </a>
         </div>
         <div class="product-card">
-            <a href="#" class="product-link">
+            <a href="andreas.html" class="product-link">
                 <div class="product-image">
                     <img src="bilder/dior-jordan.jpg" alt="Dior x Jordan">
                 </div>
                 <div class="product-info">
-                    <h5>Sneaker</h5>
-                    <h6>€99.99</h6>
+                    <h5>Dior X Jordan</h5>
+                    <h6>$2000</h6>
                 </div>
             </a>
         </div>
         <div class="product-card">
-            <a href="#" class="product-link">
+            <a href="andreas.html" class="product-link">
                 <div class="product-image">
                     <img src="bilder/kaws-jordan.jpg" alt="Kaws x Jordan">
                 </div>
                 <div class="product-info">
-                    <h5>Sneaker</h5>
-                    <h6>€99.99</h6>
+                    <h5>Kaws X Jordan</h5>
+                    <h6>$800</h6>
                 </div>
             </a>
         </div>
         <div class="product-card">
-            <a href="#" class="product-link">
+            <a href="andreas.html" class="product-link">
                 <div class="product-image">
                     <img src="bilder/offwhite-air-white.jpg" alt="Off-white x Air white">
                 </div>
                 <div class="product-info">
-                    <h5>Sneaker</h5>
-                    <h6>€99.99</h6>
+                    <h5>Off-white X nike</h5>
+                    <h6>$510</h6>
                 </div>
             </a>
         </div>
         <div class="product-card">
-            <a href="#" class="product-link">
+            <a href="andreas.html" class="product-link">
                 <div class="product-image">
                     <img src="bilder/offwhite-air1.jpg" alt="Off-white x Air blue">
                 </div>
                 <div class="product-info">
-                    <h5>Sneaker</h5>
-                    <h6>€99.99</h6>
+                    <h5>Off-white X Nike</h5>
+                    <h6>$420</h6>
                 </div>
             </a>
         </div>
         <div class="product-card">
-            <a href="#" class="product-link">
+            <a href="andreas.html" class="product-link">
                 <div class="product-image">
                     <img src="bilder/kaws-vans.jpg" alt="Kaws x Vans">
                 </div>
                 <div class="product-info">
-                    <h5>Sneaker</h5>
-                    <h6>€99.99</h6>
+                    <h5>Kaws X Vans</h5>
+                    <h6>$580</h6>
                 </div>
             </a>
         </div>
         <div class="product-card">
-            <a href="#" class="product-link">
+            <a href="andreas.html" class="product-link">
                 <div class="product-image">
                     <img src="bilder/strangelove-nike.jpg" alt="Strangelove x Nike">
                 </div>
                 <div class="product-info">
-                    <h5>Sneaker</h5>
-                    <h6>€99.99</h6>
+                    <h5>Strangelove X Nike</h5>
+                    <h6>$340</h6>
                 </div>
             </a>
         </div>
         <div class="product-card">
-            <a href="#" class="product-link">
+            <a href="andreas.html" class="product-link">
                 <div class="product-image">
                     <img src="bilder/travis-nike.jpg" alt="Traivs Scott x Nike">
                 </div>
                 <div class="product-info">
-                    <h5>Sneaker</h5>
-                    <h6>€99.99</h6>
+                    <h5>Travis Scott X Nike</h5>
+                    <h6>$430</h6>
                 </div>
             </a>
         </div>
         <div class="product-card">
-            <a href="#" class="product-link">
+            <a href="andreas.html" class="product-link">
                 <div class="product-image">
                     <img src="bilder/west-louis.jpg" alt="Kanye West x Louis Vuitton">
                 </div>
                 <div class="product-info">
-                    <h5>Sneaker</h5>
-                    <h6>€99.99</h6>
+                    <h5>Louis Vuitton Don</h5>
+                    <h6>$3000</h6>
                 </div>
             </a>
         </div>
         <div class="product-card">
-            <a href="#" class="product-link">
+            <a href="andreas.html" class="product-link">
                 <div class="product-image">
                     <img src="bilder/yeezy-nike.jpg" alt="Yeezy x Nike">
                 </div>
                 <div class="product-info">
-                    <h5>Sneaker</h5>
-                    <h6>€99.99</h6>
+                    <h5>Nike Red October</h5>
+                    <h6>$8500</h6>
                 </div>
             </a>
         </div>

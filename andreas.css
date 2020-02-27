@@ -1,9 +1,15 @@
 
+/* CSS för både mobile/tablet/desktop */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300&display=swap%27');
+
 
 body {
 color: grey;
 background-color: lightgrey;
 text-align: center;
+font-family: 'Quicksand', sans-serif;
+
 }
 
 
@@ -11,6 +17,76 @@ section {
     border: 2px solid darkgrey;
 
 }
+
+
+.arprice {
+  color: black;
+  font-size: 2vw;
+  font-weight: bolder;
+  background-color: white;
+  border: 2px solid grey;
+}
+
+.button {
+  border: 2px solid darkgrey;
+  border-radius: 90px;
+  outline: 0;
+  padding: 12px;
+  color: black;
+  background-color: lightgrey;
+  text-align: center;
+  width: 100px;
+  height: 50px;
+  margin: 5px;
+  font-size: 18px;
+
+}
+
+.buybutton {
+  border: 5px solid darkgrey;
+  border-radius: 90px;
+  outline: 0;
+  padding: 12px;
+  color: black;
+  background-color: lightgrey;
+  text-align: center;
+  width: 150px;
+  height: 100px;
+  margin: 5px;
+  font-size: 30px;
+
+
+
+}
+
+
+.button:hover {
+  opacity: 0.7;
+  cursor:all-scroll;
+  background-color:lightsteelblue;
+}
+
+
+.buybutton:hover {
+  opacity: 1;
+  cursor: pointer;
+  background-color:burlywood;
+  color:gainsboro;
+
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+/* Sections */ 
+
+
 
 .section1 {
     grid-area: header;
@@ -62,7 +138,38 @@ section {
 /* Breda desktopskärmar */ @media only screen and (min-width: 1200px) {
 
 
+/* Text specifikt för Desktop */ 
+
+div.producttextdesktop
+
+{
+    text-align: left;
+    padding: 10px;
+
+}
+
+div.abouttextdesktop
+
+{
+
+text-align: justify;
+padding:20px;
+font-size: 1.5vw;
+
+}
+
+/* Bild endast för tablet*/ 
+
+div.tabletbild 
+{
+    display: none;
+}
+
+
+/* Container som används specifikt för Desktops*/
+
 .container{
+    text-align: center;
     display: grid;
     height: 100%;
     margin: 20px;
@@ -100,51 +207,29 @@ section {
 
  }
 
-/* Mindre desktopskärmar */ @media only screen and (min-width: 960px) and (max-width: 1199px) {
 
-.container{
-    display: grid;
-    height: 100%;
-    margin: 20px;
-    grid-gap: 2%;
-    grid-template-columns: repeat(12, 1fr); 
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: 
-"header header header header header header header header header header header header" 
-"box1 box1 box1 box2 box2 box2 box2 box2 box2 box3 box3 box3" 
-"content content content content content content content content sidebar sidebar sidebar sidebar" 
-"footer footer footer footer footer footer footer footer footer footer footer footer";
+/* Tablets/iPad */ @media only screen and (min-width: 768px) and (max-width: 1199px) {
+
+
+/* Funktioner endast för tablet-utseendet */ 
+
+
+div.tabletproducttext 
+{
+
+display: justify;
+
+padding: 10px;
 }
 
-.header { grid-area: header; } 
-.box1 { grid-area: box1; }
-.box2 { grid-area: box2; }
-.box3 { grid-area: box3; }
-.content { grid-area: content; }
-.sidebar { grid-area: sidebar; }
-
-
-
-.section7 {
-    
-    grid-area: footer;
-    display: grid;
-    width: 100%;
-    padding: 2px;
-    height: 100%;
-    grid-template-columns: repeat(4,1fr );
-    grid-template-rows: 200px;
-    grid-row-gap: 10%; 
-    grid-column-gap: 2.5%;
-    grid-template-areas: "footer1 footer2 footer3 footer4";
-
-}
-
+div.tabletbild 
+{
+  display: block;
+  margin-top: 65px;
 }
 
 
-/* Tablets/iPad */ @media only screen and (min-width: 768px) and (max-width: 959px) {
-
+/* Container som används specifikt för tablets */
 
 .container {
     display: grid;
@@ -184,8 +269,65 @@ section {
 
 }
 
+
 /* Mobiltelefoner/iPhone */ @media only screen and (max-width: 767px) {
 
+/* Funktioner som ej används för Mobiltelefoner/iPhone */
+
+div.tabletbild 
+{
+    display: none;
+}
+
+  div.desktoptext 
+  {
+    display: none;
+  }
+
+
+/* Funktioner som används specifikt för Mobiltelefoner/iPhone */
+
+
+div.producttextmobile 
+{
+
+  font-size: 4.5vw;
+  padding: 15px;
+ 
+ }
+
+
+div.articleproducttextmobile
+
+{
+
+ font-size: 4vw;
+  padding: 15px;
+  margin-top: 100px;
+ 
+}
+
+div.mobilebild 
+{
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+
+
+div.mainmobilebild
+
+{display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 100%;
+  margin-top: 60px;
+}
+
+/* Container som används specifikt för Mobiltelefoner/iPhone */
 
 .container {
     display: grid;
@@ -220,25 +362,4 @@ section {
 
 
 
-
-.arprice {
-  color: grey;
-  font-size: 22px;
-}
-
-.arbuy button {
-  border: 6px black;
-  outline: 0;
-  padding: 12px;
-  color: black;
-  background-color: darkgrey;
-  text-align: center;
-  width: 50px;
-  margin: 5px;
-  font-size: 18px;
-}
-
-.arbuy button:hover {
-  opacity: 0.7;
-  cursor: pointer;
-}
+    
